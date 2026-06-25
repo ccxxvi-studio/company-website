@@ -460,30 +460,51 @@ section {
 }
 
 .hero-title-container {
-  max-width: 860px;
+  max-width: 960px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.hero-brand-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end; /* Align the text stack to the right edge of the logo */
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .hero-logo {
-  width: clamp(200px, 45vw, 380px);
+  width: clamp(280px, 62vw, 540px); /* Enlarged logo */
   height: auto;
-  margin: 0 auto 2.5rem;
+  margin-bottom: 1.5rem;
   display: block;
 }
 
-.hero-subtitle-sub {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(20px, 3.8vw, 36px);
-  line-height: 1.25;
+.hero-brand-text {
+  text-align: right; /* Right align both lines */
   margin-bottom: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+}
+
+.hero-brand-name {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 24px);
   color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle-sub {
+  font-family: var(--mono);
+  font-size: clamp(11px, 1.5vw, 13px); /* Smaller size (小小的) */
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-cta {
+  align-self: flex-end;
 }
 
 .hero-subtitle {
