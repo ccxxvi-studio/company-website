@@ -1027,6 +1027,29 @@ section {
   transition: transform .6s var(--ease);
 }
 
+.feed__media-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: var(--ink);
+  background-color: rgba(11, 12, 9, 0.85);
+  border: 1px solid var(--line);
+  padding: 3px 6px;
+  border-radius: 2px;
+  z-index: 3;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.feed__item:hover .feed__media-tag {
+  border-color: var(--volt);
+  color: var(--volt);
+}
+
 .feed__item:hover .feed__media img {
   transform: scale(1.025);
 }
